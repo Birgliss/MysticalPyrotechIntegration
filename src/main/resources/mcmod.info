@@ -1,0 +1,9 @@
+[
+	{
+		"modid": "mysticalpyrotechintegration",
+		"name": "Mystical Pyrotech Integration",
+		"description": "Adds Living Tool variants to Pyrotech's tools.",
+		"version": "${version}",
+		"mcversion": "${mcversion}"
+	}
+]

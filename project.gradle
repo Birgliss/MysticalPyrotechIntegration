@@ -1,0 +1,45 @@
+// See https://github.com/elytra/Skeleton/wiki for what all these values mean
+
+ext {
+	group = 'blue.kat'
+	projectName = 'MysticalPyrotechIntegration'
+
+	useElytraVersionFormat = true
+	version = '1'
+
+	concreteVersion = '0.4.45'
+	concreteModules = [ 'common', 'reflect', 'network' ]
+
+	coremod = null
+	miniVersion = null
+
+	language = 'java'
+
+	forge = '1.12.2-14.23.5.2847'
+	mappings = 'snapshot_20170908'
+
+	enforceLicenseHeaders = false
+
+	verbose = false
+}
+
+if (!ext.early) {
+repositories {
+	// the skeleton already defines mavenCentral, jcenter, and the Elytra repo
+	// will also have Shadowfacts' maven if the language is set to kotlin
+	flatDir{
+		dirs 'libs'
+	}
+}
+
+dependencies {
+	//pyrotech and hard-deps
+	compile files ('pyrotech-1.12.2-1.4.26.jar')
+	compile files ('dropt-1.12.2-1.17.0.jar')
+	compile files ('athenaeum-1.12.2-1.17.4.jar')
+	//roots 3 and hard-deps
+//	compile files('')
+//	compile files('')
+//	compile files('')
+}
+}
