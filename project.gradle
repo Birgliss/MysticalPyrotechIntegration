@@ -34,7 +34,7 @@ repositories {
 
 dependencies {
 	//pyrotech and hard-deps
-	compile files ('pyrotech-1.12.2-1.4.26.jar')
+	compile files ('pyrotech-1.12.2-1.4.26-3-g2d5b2de.jar')
 	compile files ('dropt-1.12.2-1.17.0.jar')
 	compile files ('athenaeum-1.12.2-1.17.4.jar')
 	//roots 3 and hard-deps

@@ -3,6 +3,8 @@ package blue.kat.mysticalpyrotechintegration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.codetaylor.mc.pyrotech.PyrotechAPI;
+
 import blue.kat.mysticalpyrotechintegration.items.ItemLivingHammer;
 import blue.kat.mysticalpyrotechintegration.proxy.Proxy;
 import net.minecraft.creativetab.CreativeTabs;
