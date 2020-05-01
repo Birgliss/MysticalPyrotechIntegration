@@ -45,10 +45,10 @@ public class MysticalPyrotechIntegration {
 	
 	@SubscribeEvent
 	public void onRegisterItems(RegistryEvent.Register<Item> e) {
-		e.getRegistry().register(LIVING_HAMMER = (ItemLivingHammer)new Item()
+		e.getRegistry().register(LIVING_HAMMER = new ItemLivingHammer()
 				.setRegistryName("living_hammer").setUnlocalizedName(MODID+".living_hammer")
 				.setMaxStackSize(1)
 				.setMaxDamage(576)
-				.setCreativeTab(CreativeTabs.TOOLS));
+				.setCreativeTab(CreativeTabs.TOOLS)); //replace later, maybe make our own?
 	}
 }
