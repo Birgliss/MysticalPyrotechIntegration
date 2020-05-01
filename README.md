@@ -1,9 +1,6 @@
-<img src="https://unascribed.com/f/a231ace4_trumpet.png" align="right" width="180px"/>
-
 # Mystical Mods - Pyrotech Integration
 
-[>> Downloads <<](https://github.com/elytra/Skeleton/releases)
-(todo on repo move: update download link, add curseforge link)
+[>> Downloads <<](https://www.curseforge.com/minecraft/mc-mods/mystical-pyrotech-integration)
 
 *"Pyromancy" was taken.*
 

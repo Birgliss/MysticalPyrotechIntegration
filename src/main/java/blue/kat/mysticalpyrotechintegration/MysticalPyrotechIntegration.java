@@ -12,6 +12,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
@@ -34,13 +35,18 @@ public class MysticalPyrotechIntegration {
 		proxy.preInit();
 	}
 	
+	@EventHandler
+	public void init(FMLInitializationEvent e) {
+		PyrotechAPI.registerHammer(LIVING_HAMMER, 2);
+		proxy.init();
+	}
+	
 	@SubscribeEvent
 	public void onRegisterItems(RegistryEvent.Register<Item> e) {
-		e.getRegistry().register(LIVING_HAMMER = (ItemLivingHammer) new Item()
+		e.getRegistry().register(LIVING_HAMMER = (ItemLivingHammer)new Item()
 				.setRegistryName("living_hammer").setUnlocalizedName(MODID+".living_hammer")
 				.setMaxStackSize(1)
 				.setMaxDamage(576)
 				.setCreativeTab(CreativeTabs.TOOLS));
 	}
-	
 }

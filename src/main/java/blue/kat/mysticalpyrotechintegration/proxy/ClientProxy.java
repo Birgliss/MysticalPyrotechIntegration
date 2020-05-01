@@ -15,6 +15,9 @@ public class ClientProxy implements Proxy {
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 	
+	@Override
+	public void init() {}
+	
 	@SubscribeEvent
 	public void onModelRegister(ModelRegistryEvent e) {
 		ModelLoader.setCustomModelResourceLocation(MysticalPyrotechIntegration.LIVING_HAMMER, 0, 
