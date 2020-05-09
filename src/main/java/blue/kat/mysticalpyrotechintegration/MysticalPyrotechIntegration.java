@@ -18,11 +18,12 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-@Mod(modid=MysticalPyrotechIntegration.MODID, name=MysticalPyrotechIntegration.NAME, version=MysticalPyrotechIntegration.VERSION)
+@Mod(modid=MysticalPyrotechIntegration.MODID, name=MysticalPyrotechIntegration.NAME, version=MysticalPyrotechIntegration.VERSION, dependencies=MysticalPyrotechIntegration.DEPENDENCIES)
 public class MysticalPyrotechIntegration {
 	public static final String MODID = "mysticalpyrotechintegration";
 	public static final String NAME = "Mystical Mods - Pyrotech Integration";
 	public static final String VERSION = "@VERSION@";
+	public static final String DEPENDENCIES = "required-after:pyrotech;";
 	
 	public static final Logger log = LogManager.getLogger(NAME);
 	
@@ -45,7 +46,7 @@ public class MysticalPyrotechIntegration {
 	
 	@SubscribeEvent
 	public void onRegisterItems(RegistryEvent.Register<Item> e) {
-		e.getRegistry().register(LIVING_HAMMER = new ItemLivingHammer()
+		e.getRegistry().register(LIVING_HAMMER = (ItemLivingHammer) new ItemLivingHammer()
 				.setRegistryName("living_hammer").setUnlocalizedName(MODID+".living_hammer")
 				.setMaxStackSize(1)
 				.setMaxDamage(576)
