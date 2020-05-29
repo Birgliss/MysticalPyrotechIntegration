@@ -27,16 +27,16 @@ if (!ext.early) {
 repositories {
 	// the skeleton already defines mavenCentral, jcenter, and the Elytra repo
 	// will also have Shadowfacts' maven if the language is set to kotlin
-	flatDir{
-		dirs 'libs'
-	}
+//	flatDir{
+//		dirs 'libs'
+//	}
 }
 
 dependencies {
 	//pyrotech and hard-deps
-	compile files ('pyrotech-1.12.2-1.4.26-3-g2d5b2de.jar')
-	compile files ('dropt-1.12.2-1.17.0.jar')
-	compile files ('athenaeum-1.12.2-1.17.4.jar')
+//	compile files ('pyrotech-1.12.2-1.4.26-3-g2d5b2de.jar')
+//	compile files ('dropt-1.12.2-1.17.0.jar')
+//	compile files ('athenaeum-1.12.2-1.17.4.jar')
 	//roots 3 and hard-deps
 //	compile files('')
 //	compile files('')
